@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "351030341157",
+    "project_id": "telegrom-2d305",
+    "storage_bucket": "telegrom-2d305.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351030341157:android:fa4b039e071e893e5599cc",
+        "android_client_info": {
+          "package_name": "com.example.android.telegrom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351030341157-7utkptbqqg95k5rhhnarv8mgolpn81cf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.telegrom",
+            "certificate_hash": "05f6c4bcccd92dba8eab1a38975d80838a557139"
+          }
+        },
+        {
+          "client_id": "351030341157-nj3afsg09c2ok0dg7kvvb972qlad380d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEfbVo-kSL_NolZQ4m-jX-9gMyDv9h9WA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "351030341157-nj3afsg09c2ok0dg7kvvb972qlad380d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
