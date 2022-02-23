@@ -1,7 +1,12 @@
 package com.example.android.telegrom;
 
 import androidx.activity.result.ActivityResultLauncher;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +14,7 @@ import android.widget.Toast;
 
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.FirebaseAuthUIActivityResultContract;
+import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -16,6 +22,11 @@ import java.util.Arrays;
 
 public class HomeActivity extends AppCompatActivity {
 
+
+    private NavigationView nav_view;
+    private DrawerLayout drawerlayout;
+    private ActionBarDrawerToggle toggle;
+    private RecyclerView recyclerView;
 
     private FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
@@ -26,6 +37,21 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         firebaseAuth= FirebaseAuth.getInstance();
+
+        recyclerView=findViewById(R.id.home_chats_list);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        drawerlayout=findViewById(R.id.drawer_layout);
+        nav_view=findViewById(R.id.nav_view);
+
+//      setting custom toolbar
+        Toolbar toolbar=findViewById(R.id.home_toolbar);
+        setSupportActionBar(toolbar);
+
+//      setting and attaching custom toggle button(in toolbar)
+        toggle=new ActionBarDrawerToggle(this,drawerlayout,toolbar,
+                R.string.navigation_drawer_open,R.string.navigation_drawer_close);
+        drawerlayout.addDrawerListener(toggle);
+        toggle.syncState();
 
         authStateListener = firebaseAuth -> {
             FirebaseUser user = firebaseAuth.getCurrentUser();
