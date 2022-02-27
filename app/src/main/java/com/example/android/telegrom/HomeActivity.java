@@ -80,7 +80,7 @@ public class HomeActivity extends AppCompatActivity {
 
         signInLauncher.launch(signInIntent);
     }
-    private ActivityResultLauncher<Intent> signInLauncher = registerForActivityResult(
+    private final ActivityResultLauncher<Intent> signInLauncher = registerForActivityResult(
             new FirebaseAuthUIActivityResultContract(),
             result -> {
                 int resultCode=result.getResultCode();

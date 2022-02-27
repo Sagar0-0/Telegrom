@@ -11,13 +11,13 @@
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
 
-    <color name="icon_color">#279ED8</color>
+    <color name="theme_color">#279ED8</color>
     <color name="red">#FF0000</color>
     <color name="dark_blue">#FF01579B</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="grey">#393939</color>
-    <color name="light_grey">#818181</color>
+    <color name="grey">#252525</color>
+    <color name="light_grey">#373737</color>
     
 
 </resources>

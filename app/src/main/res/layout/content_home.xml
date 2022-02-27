@@ -21,9 +21,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/home_chats_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="vertical"
-        
         tools:listitem="@layout/home_list_item"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
