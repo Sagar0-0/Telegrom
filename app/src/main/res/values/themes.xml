@@ -14,6 +14,10 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="SplashTheme" parent="Theme.Telegrom">
+        <item name="android:statusBarColor">@color/theme_color</item>
+    </style>
+
     <style name="Theme.Telegrom.Fullscreen" parent="Theme.Telegrom">
         <item name="android:actionBarStyle">@style/Widget.Theme.Telegrom.ActionBar.Fullscreen</item>
         <item name="android:windowActionBarOverlay">true</item>

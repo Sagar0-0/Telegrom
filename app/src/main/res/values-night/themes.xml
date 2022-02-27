@@ -14,6 +14,10 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="SplashTheme" parent="Theme.Telegrom">
+        <item name="android:statusBarColor">@color/theme_color</item>
+    </style>
+
     <style name="ThemeOverlay.Telegrom.FullscreenContainer" parent="">
         <item name="fullscreenBackgroundColor">@color/light_blue_900</item>
         <item name="fullscreenTextColor">@color/light_blue_A400</item>
